@@ -1,0 +1,123 @@
+.searchBox {
+  padding: 12px 16px;
+  border: solid #EEEEEE 2px;
+  width: 384px;
+  max-width: 100%;
+  margin-bottom: 50px;
+  border-radius: 2px;
+
+  @media screen and (max-width: 798px) {
+    padding: 10px 12px;
+  }
+}
+
+.searchBox::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.searchResults {
+  margin-bottom: var(--spacing-lg);
+  display: grid;
+  grid-gap: var(--spacing-sm);
+  grid-template-columns: repeat(4, 1fr);
+
+  @media screen and (max-width: 480px) {
+    display: block;
+  }
+
+  @media screen and (max-width: 798px) {
+    grid-template-columns: minmax(100px, 1fr) 1fr;
+  }
+
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.searchResults .item .link {
+  color: var(--color-jelly-bean);
+  text-decoration: underline;
+}
+
+.searchResults .item:hover .card {
+  transition: box-shadow 250ms ease-out;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.4);
+}
+
+.pagination {
+  margin: 0 0 var(--spacing-md) 0;
+}
+
+.pagination .overview {
+  margin-bottom: var(--spacing-sm);
+}
+
+.pagination .buttons button {
+  --size: 32px;
+  --margin: 6px;
+  margin: 0 var(--margin) 0 0;
+  border-radius: 4px;
+  border: none;
+  background: #EEEEEE;
+  max-width: auto;
+  min-width: var(--size);
+  height: var(--size);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0 12px;
+  transition: all 150ms ease-out;
+}
+
+.pagination .buttons button:not([disabled]):hover {
+  background: #e2e2e2;
+}
+
+.pagination .buttons button:not([disabled]):active {
+  background: #d4d4d4
+}
+
+.pagination .buttons img {
+  width: 10px;
+}
+.pagination .buttons button[disabled] img {
+  opacity: 0.25;
+}
+
+.pagination .arrow {
+  display: block;
+  font-size: 13px;
+}
+
+.pagination .arrowLeft {
+  margin-right: 4px;
+}
+
+.pagination .arrowRight {
+  margin-left: 4px;
+  transform: rotate(180deg);
+}
+
+.card {
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 12px 16px;
+  gap: 8px;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  @media screen and (max-width: 480px) {
+    margin-bottom: var(--spacing-sm);
+  }
+
+  @media screen and (max-width: 798px) {
+    padding: 10px 12px;
+  }
+}
+
+.searchResults .title {
+  font: 700 var(--text-lg) var(--font);
+}
