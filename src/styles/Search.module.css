@@ -20,18 +20,26 @@
   display: grid;
   grid-gap: var(--spacing-sm);
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
 
-  @media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
+  .searchResults {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+  
+}
 
-  @media screen and (max-width: 798px) {
+@media screen and (max-width: 798px) {
+  .searchResults {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  
+}
 
-  @media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
+  .searchResults {
     display: block;
-  }
+  } 
 }
 
 .searchResults .item {
@@ -116,12 +124,16 @@
   gap: 8px;
   box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
 
-  @media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
+  .card {
     margin-bottom: var(--spacing-sm);
-  }
+  } 
+}
 
-  @media screen and (max-width: 798px) {
+@media screen and (max-width: 798px) {
+  .card {
     padding: 10px 12px;
   }
 }

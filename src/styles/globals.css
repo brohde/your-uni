@@ -1,19 +1,13 @@
 :root {
   --max-width: 1200px;
   --font: Arial, Helvetica, sans-serif;
-
   --color-jelly-bean: #E16259;
-
   --spacing-sm: 20px;
   --spacing-md: 40px;
   --spacing-lg: 100px;
-
   --screen-max-xs: 480px;
   --screen-max-sm: 798px;
   --screen-max-lg: 1024px;
-
-  --text-xs: 10px;
-  --text-sm: 10px;
   --text-base: 17px;
   --text-lg: 22px/30px;
   --text-xl: 24px/32px;
@@ -28,7 +22,6 @@
   }
 }
 
-/* Small */
 @media screen and (max-width: 798px) {
   :root {
     --spacing-md: 20px;

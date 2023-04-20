@@ -30,17 +30,20 @@
   text-decoration-color: transparent;
   color: black;
   padding: 2px 12px;
+}
 
-  @media screen and (max-width: 798px) {
+@media screen and (max-width: 798px) {
+  .nav a {
     padding: 2px 8px;
   }
 }
 
 .nav li:last-child a {
   margin-right: -12px;
-
-  @media screen and (max-width: 798px) {
-    marign-right: -8px;
+}
+@media screen and (max-width: 798px) {
+  .nav li:last-child a {
+    margin-right: -8px;
   }
 }
 
