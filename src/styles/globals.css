@@ -18,21 +18,24 @@
   --text-lg: 22px/30px;
   --text-xl: 24px/32px;
   --text-2xl: 69px/1em;
+}
 
-  @media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
+  :root {
     --spacing-lg: 60px;
     --text-2xl: 40px/1em;
     --text-lg: 20px/28px;
   }
+}
 
-  /* Small */
-  @media screen and (max-width: 798px) {
+/* Small */
+@media screen and (max-width: 798px) {
+  :root {
     --spacing-md: 20px;
     --spacing-lg: 40px;
     --text-2xl: 28px/1em;
     --text-lg: 18px/24px;
     --text-base: 14px;
-    
   }
 }
 
