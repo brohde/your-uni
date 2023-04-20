@@ -75,6 +75,7 @@
   border-radius: 4px;
   border: none;
   background: #EEEEEE;
+  color: black;
   max-width: auto;
   min-width: var(--size);
   height: var(--size);
