@@ -33,6 +33,22 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .hero {
+    /* align-items: flex-start; */
+  }
+
+  .hero .left {
+    flex: 3;
+  }
+
+  .hero .right {
+    flex: 2;
+    margin-left: 20px;
+  }
+}
+
+
 @media screen and (max-width: 798px) {
   .hero {
     align-items: flex-start;

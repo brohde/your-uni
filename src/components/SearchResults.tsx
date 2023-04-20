@@ -72,7 +72,7 @@ const SearchResults = ({ data, filterText = '' }: { data: UniData[], filterText?
       {currentItems.map(uniData => (
         <div key={uniData.UNITID} className={styles.item}>
           <div className={styles.card}>
-            <p>{uniData.CITY} • {uniData.STABBR}</p>
+            <p className={styles.location}>{uniData.CITY} • {uniData.STABBR}</p>
             <p className={styles.title}>{uniData.INSTNM}</p>
             <p><a className={styles.link} href={`https://${uniData.INSTURL}`}>{uniData.INSTURL}</a></p>
           </div>

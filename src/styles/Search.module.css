@@ -19,19 +19,27 @@
   margin-bottom: var(--spacing-lg);
   display: grid;
   grid-gap: var(--spacing-sm);
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  @media screen and (max-width: 798px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 
   @media screen and (max-width: 480px) {
     display: block;
   }
+}
 
-  @media screen and (max-width: 798px) {
-    grid-template-columns: minmax(100px, 1fr) 1fr;
-  }
+.searchResults .item {
+  margin-bottom: var(--spacing-sm);
+}
 
-  @media screen and (max-width: 1024px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
+.searchResults .item .location {
+  color: #656565;
 }
 
 .searchResults .item .link {
